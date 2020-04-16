@@ -1,9 +1,11 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers(a, b) {
+function maxOfTwoNumbers(a, b){
   if (a > b) {
     return a;
-  } else {
+  } else if {
     return b;
+  } else {
+    return null;
   }
 }
 
@@ -67,22 +69,30 @@ const wordsUnique = [
   'simple',
   'bring'
 ];
-uniquifyArray = (wordsArr) => {
-  for (let i = 0; i < wordsArr.length; i++) {
-    const duplicate = "";
-    if (wordsArr[i] === wordsArr[i]) {
-      wordsArr.splice(0,1);
+function uniquifyArray (word) {
+  let filteredArray = [];
+  for (let word of array) {
+    if (array.indexOf(word, !2) {
+      filteredArray.push(word);
+    } else {
+      continue;
     }
-    return wordsArr;
+    return filteredArray;
   }
-  
 }
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
-
-
+function doesWordExist(array, word) {
+  for (let word of array) {
+    if (word === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -98,10 +108,22 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
-//The function will return the number of times that word appears in the array.
+function howManyTimes(array, word) {
+  let numOfTimes = 0;
+  for (let word of array) {
+    if (word === word) {
+      numOfTimes += 1;
+    }
+  }
+    return numOfTimes;
+}
 
 
 // Iteration #8: Bonus
+greatestProduct = (matrix) => {
+  
+}
+
 
 const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
