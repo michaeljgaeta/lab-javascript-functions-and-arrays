@@ -1,6 +1,12 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers(a, b){
-  return Math.max(a, b);
+const maxOfTwoNumbers(a, b) {
+  if (a > b) {
+    return a;
+  } else if (b > a) {
+    return b;
+  } else {
+    return null;
+  }
 }
 
 // Iteration #2: Find longest word
