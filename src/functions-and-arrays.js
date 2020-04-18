@@ -96,11 +96,9 @@ function uniquifyArray(wordsArr) {
   } else {
     let filteredArray = [];
     for (let word of wordsArr) {
-      if (wordsArr.indexOf(word) !== words.Arr.lastIndexOf(word)) {
+      if (wordsArr.indexOf(word) < 0) {
         filteredArray.push(word);
-      } else {
-        continue;
-      }
+      } 
       return filteredArray;
     }
   }
@@ -110,14 +108,16 @@ function uniquifyArray(wordsArr) {
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 function doesWordExist(array, word) {
-  for (let word of array) {
-    if (word === true) {
+  if (!array.length) return null;
+  for (let occurence of array) {
+    if (occurence === word) {
       return true;
     } else {
       return false;
     }
   }
 }
+
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -135,8 +135,8 @@ const wordsCount = [
 ];
 function howManyTimes(array, word) {
   let numOfTimes = 0;
-  for (let word of array) {
-    if (word === word) {
+  for (let occurence of array) {
+    if (occurence === word) {
       numOfTimes += 1;
     }
   }
